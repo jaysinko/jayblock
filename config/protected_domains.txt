@@ -1,0 +1,186 @@
+# Exact hostnames that must never be matched by the published list under
+# Little Snitch domain semantics (the name itself or a blocked ancestor).
+# This is a test fixture, not an allowlist. If a test fails, investigate
+# the upstream hit and add a documented allowlist exception only if needed.
+
+# Apple / iCloud / updates
+apple.com
+icloud.com
+icloud-content.com
+cdn-apple.com
+mzstatic.com
+aaplimg.com
+apple-cloudkit.com
+me.com
+mac.com
+appleid.apple.com
+ocsp.apple.com
+ocsp2.apple.com
+valid.apple.com
+certs.apple.com
+crl.apple.com
+mesu.apple.com
+gdmf.apple.com
+swscan.apple.com
+swcdn.apple.com
+gs.apple.com
+push.apple.com
+setup.icloud.com
+gateway.icloud.com
+mask.icloud.com
+mask-h2.icloud.com
+
+# Git / GitHub
+github.com
+api.github.com
+githubusercontent.com
+githubassets.com
+codeload.github.com
+ghcr.io
+npm.pkg.github.com
+
+# npm / Node
+registry.npmjs.org
+registry.npmjs.com
+npmjs.org
+npmjs.com
+nodejs.org
+yarnpkg.com
+registry.yarnpkg.com
+
+# Python
+pypi.org
+files.pythonhosted.org
+pythonhosted.org
+python.org
+bootstrap.pypa.io
+
+# Docker
+docker.com
+docker.io
+registry-1.docker.io
+auth.docker.io
+hub.docker.com
+production.cloudflare.docker.com
+
+# Cloudflare (not including cloudflareinsights.com)
+cloudflare.com
+cloudflare.net
+cdnjs.cloudflare.com
+cloudflare-dns.com
+one.one.one.one
+
+# OpenAI / ChatGPT
+openai.com
+api.openai.com
+chatgpt.com
+oaistatic.com
+oaiusercontent.com
+auth0.openai.com
+
+# Anthropic / Claude
+anthropic.com
+api.anthropic.com
+claude.ai
+claude.com
+
+# Google / Gmail (not including google-analytics / doubleclick)
+google.com
+googleapis.com
+gstatic.com
+googleusercontent.com
+gmail.com
+accounts.google.com
+mail.google.com
+oauth2.googleapis.com
+www.googleapis.com
+storage.googleapis.com
+dl.google.com
+clients1.google.com
+clients2.google.com
+clients4.google.com
+clients5.google.com
+clients6.google.com
+play.google.com
+docs.google.com
+drive.google.com
+calendar.google.com
+sheets.google.com
+script.google.com
+android.clients.google.com
+
+# YouTube playback
+youtube.com
+youtu.be
+googlevideo.com
+ytimg.com
+ggpht.com
+jnn-pa.googleapis.com
+youtubei.googleapis.com
+youtube-nocookie.com
+
+# Facebook / Messenger
+facebook.com
+fb.com
+fbcdn.net
+messenger.com
+m.me
+whatsapp.com
+whatsapp.net
+instagram.com
+cdninstagram.com
+
+# Stripe / payments
+stripe.com
+js.stripe.com
+api.stripe.com
+m.stripe.com
+stripecdn.com
+paypal.com
+paypalobjects.com
+braintreegateway.com
+
+# Auth
+okta.com
+auth0.com
+login.microsoftonline.com
+login.live.com
+microsoftonline.com
+msftauth.net
+appleid.apple.com
+
+# Certificate infrastructure
+digicert.com
+letsencrypt.org
+lencr.org
+identrust.com
+pki.goog
+sectigo.com
+globalsign.com
+verisign.com
+
+# DNS
+quad9.net
+dns.quad9.net
+dns.google
+
+# AI / editor tooling
+cursor.com
+cursor.sh
+anthropic.com
+githubcopilot.com
+copilot.microsoft.com
+
+# Common CDNs that must not be blocked at the apex. Public suffixes are
+# also rejected by the generator (cloudfront.net, amazonaws.com, github.io).
+fastly.com
+fastly.net
+akamai.net
+akamaihd.net
+akamaized.net
+edgecastcdn.net
+unpkg.com
+jsdelivr.net
+cdn.jsdelivr.net
+esm.sh
+jspm.io

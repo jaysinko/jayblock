@@ -1,0 +1,223 @@
+# JayBlock upstream sources.
+# Quality over quantity. HaGeZi already compiles EasyList, EasyPrivacy,
+# AdGuard DNS filter, OISD, StevenBlack and others; those are not ingested
+# separately. See docs/research.md.
+
+sources:
+  - id: hagezi-normal
+    name: HaGeZi Multi NORMAL
+    url: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/multi-onlydomains.txt
+    fallbacks:
+      - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/wildcard/multi-onlydomains.txt
+      - https://codeberg.org/hagezi/mirror2/raw/branch/main/dns-blocklists/wildcard/multi-onlydomains.txt
+    format: domains
+    license: GPL-3.0
+    homepage: https://github.com/hagezi/dns-blocklists
+    categories:
+      - advertising
+      - tracking
+      - analytics
+      - telemetry
+      - malware
+      - phishing
+      - scam
+      - cryptominer
+    timeout_seconds: 90
+    required: true
+    reason: >
+      Compatibility-oriented all-round list. Does not block crash reporters.
+      Used for the balanced profile only.
+    sanity:
+      min_bytes: 1500000
+      max_bytes: 12000000
+      min_entries: 80000
+      max_shrink_ratio: 0.5
+      max_growth_ratio: 3.0
+
+  - id: hagezi-pro
+    name: HaGeZi Multi PRO
+    url: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro-onlydomains.txt
+    fallbacks:
+      - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/wildcard/pro-onlydomains.txt
+      - https://codeberg.org/hagezi/mirror2/raw/branch/main/dns-blocklists/wildcard/pro-onlydomains.txt
+    format: domains
+    license: GPL-3.0
+    homepage: https://github.com/hagezi/dns-blocklists
+    categories:
+      - advertising
+      - tracking
+      - analytics
+      - telemetry
+      - malware
+      - phishing
+      - scam
+      - cryptominer
+    timeout_seconds: 90
+    required: true
+    reason: >
+      HaGeZi's recommended default (big broom). Curated compilation rather than
+      a raw merge, with ongoing false-positive cleanup. Foundation of aggressive.
+    sanity:
+      min_bytes: 2000000
+      max_bytes: 15000000
+      min_entries: 100000
+      max_shrink_ratio: 0.5
+      max_growth_ratio: 3.0
+
+  - id: hagezi-proplus
+    name: HaGeZi Multi PRO++
+    url: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/pro.plus-onlydomains.txt
+    fallbacks:
+      - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/wildcard/pro.plus-onlydomains.txt
+      - https://codeberg.org/hagezi/mirror2/raw/branch/main/dns-blocklists/wildcard/pro.plus-onlydomains.txt
+    format: domains
+    license: GPL-3.0
+    homepage: https://github.com/hagezi/dns-blocklists
+    categories:
+      - advertising
+      - tracking
+      - analytics
+      - telemetry
+      - malware
+      - phishing
+      - scam
+      - cryptominer
+    timeout_seconds: 90
+    required: true
+    reason: >
+      More aggressive sibling of Multi PRO. Used only for nuclear. Ultimate is
+      not used because it documents Facebook/Messenger breakage.
+    sanity:
+      min_bytes: 2500000
+      max_bytes: 18000000
+      min_entries: 120000
+      max_shrink_ratio: 0.5
+      max_growth_ratio: 3.0
+
+  - id: hagezi-tif-mini
+    name: HaGeZi Threat Intelligence Feeds Mini
+    url: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.mini-onlydomains.txt
+    fallbacks:
+      - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/wildcard/tif.mini-onlydomains.txt
+      - https://codeberg.org/hagezi/mirror2/raw/branch/main/dns-blocklists/wildcard/tif.mini-onlydomains.txt
+    format: domains
+    license: GPL-3.0
+    homepage: https://github.com/hagezi/dns-blocklists
+    categories:
+      - malware
+      - phishing
+      - scam
+      - cryptominer
+      - command-and-control
+    timeout_seconds: 90
+    required: true
+    reason: >
+      Size-reduced threat feed for the balanced profile. Security coverage
+      without the full TIF memory cost.
+    sanity:
+      min_bytes: 1000000
+      max_bytes: 12000000
+      min_entries: 50000
+      max_shrink_ratio: 0.5
+      max_growth_ratio: 3.0
+
+  - id: hagezi-tif-medium
+    name: HaGeZi Threat Intelligence Feeds Medium
+    url: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/tif.medium-onlydomains.txt
+    fallbacks:
+      - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/wildcard/tif.medium-onlydomains.txt
+      - https://codeberg.org/hagezi/mirror2/raw/branch/main/dns-blocklists/wildcard/tif.medium-onlydomains.txt
+    format: domains
+    license: GPL-3.0
+    homepage: https://github.com/hagezi/dns-blocklists
+    categories:
+      - malware
+      - phishing
+      - scam
+      - cryptominer
+      - command-and-control
+      - adware
+    timeout_seconds: 120
+    required: true
+    reason: >
+      HaGeZi recommends pairing Multi PRO with TIF. Full TIF is ~2.1M / 44MB and
+      is too large for a comfortable Little Snitch subscription. Medium keeps
+      the important threat feeds.
+    sanity:
+      min_bytes: 4000000
+      max_bytes: 40000000
+      min_entries: 100000
+      max_shrink_ratio: 0.5
+      max_growth_ratio: 3.0
+
+  - id: hagezi-fake
+    name: HaGeZi Fake
+    url: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/fake-onlydomains.txt
+    fallbacks:
+      - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/wildcard/fake-onlydomains.txt
+      - https://codeberg.org/hagezi/mirror2/raw/branch/main/dns-blocklists/wildcard/fake-onlydomains.txt
+    format: domains
+    license: GPL-3.0
+    homepage: https://github.com/hagezi/dns-blocklists
+    categories:
+      - scam
+      - phishing
+    timeout_seconds: 60
+    required: true
+    reason: >
+      Fake stores, fake streaming sites, rip-offs, and subscription traps.
+      Complements Multi PRO rather than duplicating generic ads.
+    sanity:
+      min_bytes: 50000
+      max_bytes: 3000000
+      min_entries: 2000
+      max_shrink_ratio: 0.4
+      max_growth_ratio: 4.0
+
+  - id: hagezi-popupads
+    name: HaGeZi Pop-Up Ads
+    url: https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/popupads-onlydomains.txt
+    fallbacks:
+      - https://gitlab.com/hagezi/mirror/-/raw/main/dns-blocklists/wildcard/popupads-onlydomains.txt
+      - https://codeberg.org/hagezi/mirror2/raw/branch/main/dns-blocklists/wildcard/popupads-onlydomains.txt
+    format: domains
+    license: GPL-3.0
+    homepage: https://github.com/hagezi/dns-blocklists
+    categories:
+      - advertising
+      - unwanted-push
+    timeout_seconds: 60
+    required: true
+    reason: >
+      Extra pop-up and malicious interstitial domains. Nuclear only because
+      the overlap with Pro is high and leftover unique entries are more likely
+      to include compatibility surprises.
+    sanity:
+      min_bytes: 100000
+      max_bytes: 8000000
+      min_entries: 5000
+      max_shrink_ratio: 0.4
+      max_growth_ratio: 4.0
+
+  - id: jayblock-extras
+    name: JayBlock extras
+    path: config/extras.txt
+    format: domains
+    license: GPL-3.0
+    homepage: https://github.com/jaysinko/jayblock
+    categories:
+      - tracking
+      - fingerprinting
+      - session-replay
+      - identity-resolution
+      - advertising-measurement
+    required: true
+    reason: >
+      Small, reviewed set of session-replay, fingerprinting, and identity-resolution
+      infrastructure. Deduplicated against upstream; kept as a safety net.
+    sanity:
+      min_bytes: 200
+      max_bytes: 200000
+      min_entries: 20
+      max_shrink_ratio: 0.2
+      max_growth_ratio: 10.0

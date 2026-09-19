@@ -1,0 +1,36 @@
+# Representative domains that must be blocked in the aggressive profile.
+# Used as a canary that upstream retrieval and generation still work.
+
+doubleclick.net
+google-analytics.com
+googletagmanager.com
+googlesyndication.com
+googleadservices.com
+scorecardresearch.com
+quantserve.com
+hotjar.com
+fullstory.com
+fingerprintjs.com
+criteo.com
+adnxs.com
+adsrvr.org
+amazon-adsystem.com
+facebook.net
+appsflyer.com
+adjust.com
+taboola.com
+outbrain.com
+clarity.ms
+logrocket.com
+liveramp.com
+id5-sync.com
+rlcdn.com
+demdex.net
+omtrdc.net
+casalemedia.com
+pubmatic.com
+rubiconproject.com
+openx.net
+media.net
+chartboost.com
+mopub.com

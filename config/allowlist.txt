@@ -1,0 +1,107 @@
+# JayBlock allowlist
+# Syntax: one domain per line. The domain and all names under it are exempt
+# from every upstream source. Comments immediately above an entry are the
+# reason. Do not allowlist a shared CDN or cloud provider just because one
+# service uses it.
+
+# YouTube ads and video share googlevideo.com / youtube.com infrastructure.
+# Domain blocking cannot remove YouTube ads without breaking playback.
+# Evidence: Little Snitch/Pi-hole community; PipePipe #2757; accessed 2026-09-18.
+googlevideo.com
+youtube.com
+youtu.be
+youtube-nocookie.com
+ytimg.com
+ggpht.com
+youtubekids.com
+jnn-pa.googleapis.com
+youtubei.googleapis.com
+
+# GitHub user/content CDN. githubusercontent.com is a public suffix, so this
+# exempts the whole namespace rather than a single hostname.
+githubusercontent.com
+githubassets.com
+
+# npm public registry and CDN. Blocking breaks package installs.
+registry.npmjs.org
+registry.npmjs.com
+npmjs.org
+npmjs.com
+
+# PyPI and wheel CDN. Blocking breaks pip/uv/poetry installs.
+pypi.org
+files.pythonhosted.org
+pythonhosted.org
+
+# Docker Hub auth/registry. Blocking breaks image pulls.
+docker.io
+docker.com
+production.cloudflare.docker.com
+
+# Certificate validation and Apple software updates. Blocking these is
+# worse than any telemetry win.
+ocsp.apple.com
+ocsp2.apple.com
+valid.apple.com
+certs.apple.com
+crl.apple.com
+mesu.apple.com
+gdmf.apple.com
+swscan.apple.com
+swcdn.apple.com
+swdist.apple.com
+gs.apple.com
+albert.apple.com
+identity.apple.com
+push.apple.com
+appleid.apple.com
+setup.icloud.com
+gateway.icloud.com
+mask.icloud.com
+mask-h2.icloud.com
+mask-api.icloud.com
+
+# Let's Encrypt / common CA OCSP and CRLs.
+letsencrypt.org
+lencr.org
+ocsp.digicert.com
+crl3.digicert.com
+crl4.digicert.com
+ocsp.pki.goog
+pki.goog
+ocsp.identrust.com
+
+# HaGeZi Multi PRO documents that crash/error trackers (Sentry, Bugsnag,
+# Crashlytics, etc.) start at Pro. On a development Mac those hosts are also
+# first-party developer platforms, not just other apps' telemetry.
+sentry.io
+sentry.dev
+bugsnag.com
+datadoghq.com
+newrelic.com
+nr-data.net
+honeycomb.io
+grafana.net
+grafana.com
+
+# Firebase is an application backend. firebaseapp.com is a public suffix, so
+# allowlisting it exempts hosted apps. Analytics-only Firebase hosts can still
+# be blocked.
+firebaseio.com
+firebaseapp.com
+firebase.google.com
+firebasestorage.googleapis.com
+
+# Stripe checkout/js. Blocking breaks ordinary ecommerce and billing.
+stripe.com
+stripecdn.com
+js.stripe.com
+m.stripe.network
+
+# Encrypted DNS endpoints recommended in docs/research.md. Blocking them
+# would fight Little Snitch's own DNS encryption feature.
+cloudflare-dns.com
+dns.quad9.net
+quad9.net
+dns.google
+one.one.one.one

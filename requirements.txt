@@ -1,0 +1,2 @@
+# Runtime dependency for config parsing. The rest of JayBlock is Python 3.12+ stdlib.
+PyYAML>=6.0

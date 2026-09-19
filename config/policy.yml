@@ -1,0 +1,28 @@
+default_profile: aggressive
+collapse_redundant_subdomains: true
+# Little Snitch 6 domain blocklists match each listed domain and every hostname
+# under it. Verified 2026-09-18:
+# https://help.obdev.at/littlesnitch6/concepts-blocklists
+
+profiles:
+  balanced:
+    description: Very low false-positive tolerance for daily use.
+    sources:
+      - hagezi-normal
+      - hagezi-tif-mini
+      - jayblock-extras
+  aggressive:
+    description: Primary profile. Strong blocking while preserving ordinary functionality.
+    sources:
+      - hagezi-pro
+      - hagezi-tif-medium
+      - hagezi-fake
+      - jayblock-extras
+  nuclear:
+    description: Experimental maximum blocking. Breakage is acceptable. Not the default.
+    sources:
+      - hagezi-proplus
+      - hagezi-tif-medium
+      - hagezi-fake
+      - hagezi-popupads
+      - jayblock-extras

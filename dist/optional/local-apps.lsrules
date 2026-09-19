@@ -1,0 +1,27 @@
+{
+  "name": "JayBlock optional local-app containment",
+  "description": "Template only. Import locally after review. This is not the JayBlock blocklist subscription and is disabled by default so it cannot silently change policy.",
+  "rules": [
+    {
+      "action": "deny",
+      "process": "/System/Applications/Calculator.app/Contents/MacOS/Calculator",
+      "remote": "any",
+      "notes": "Calculator has no legitimate reason to contact the Internet.",
+      "disabled": true
+    },
+    {
+      "action": "deny",
+      "process": "/System/Applications/Chess.app/Contents/MacOS/Chess",
+      "remote": "any",
+      "notes": "Chess is a local game.",
+      "disabled": true
+    },
+    {
+      "action": "deny",
+      "process": "/System/Applications/TextEdit.app/Contents/MacOS/TextEdit",
+      "remote": "any",
+      "notes": "TextEdit does not need outbound Internet. Leave disabled if you use iCloud documents.",
+      "disabled": true
+    }
+  ]
+}

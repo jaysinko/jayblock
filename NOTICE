@@ -1,0 +1,26 @@
+JayBlock
+========
+
+Copyright (C) 2026 Jay Sinko and contributors
+
+This program is free software: you can redistribute it and/or modify it
+under the terms of the GNU General Public License as published by the
+Free Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+
+The generated blocklists in dist/ incorporate data from:
+
+  HaGeZi DNS Blocklists
+  https://github.com/hagezi/dns-blocklists
+  License: GPL-3.0
+  Accessed during each build; see dist/stats.json for the generation time.
+
+HaGeZi in turn compiles many independently licensed sources. There is no
+1:1 copy of those sources in JayBlock. See:
+
+  https://github.com/hagezi/dns-blocklists/blob/main/sources.md
+
+The Mozilla Public Suffix List is vendored in vendor/public_suffix_list.dat
+under the Mozilla Public License 2.0:
+
+  https://publicsuffix.org/list/public_suffix_list.dat
