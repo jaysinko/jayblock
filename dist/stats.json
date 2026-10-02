@@ -1,26 +1,26 @@
 {
-  "allowlisted": 98,
-  "build_time_seconds": 25.477,
-  "duplicates_removed": 72929,
+  "allowlisted": 103,
+  "build_time_seconds": 26.1,
+  "duplicates_removed": 77159,
   "errors": [],
-  "file_size_bytes": 17524534,
-  "final_domains": 943580,
-  "fingerprint": "e8c301a0f77ec4932f79e2a6ab90b6498912cb999b92459919d8cb8cb9943ca3",
-  "generated_at": "2026-10-01T14:26:39Z",
+  "file_size_bytes": 16748151,
+  "final_domains": 897751,
+  "fingerprint": "2ed189df13b8380b3de58fd3052dab3302fa7dfd04386aa52a8770a05328e92f",
+  "generated_at": "2026-10-02T13:50:02Z",
   "profile": "aggressive",
   "profiles": {
     "aggressive": {
       "allowlist_hits": {
         "bugsnag.com": 1,
         "cloudflare-dns.com": 1,
-        "datadoghq.com": 12,
+        "datadoghq.com": 18,
         "docker.com": 2,
         "firebaseapp.com": 23,
         "firebaseio.com": 23,
         "githubassets.com": 1,
         "githubusercontent.com": 2,
         "grafana.com": 1,
-        "grafana.net": 20,
+        "grafana.net": 19,
         "honeycomb.io": 1,
         "newrelic.com": 1,
         "nr-data.net": 1,
@@ -29,39 +29,39 @@
         "stripe.com": 1,
         "youtube.com": 3
       },
-      "allowlisted": 98,
-      "build_time_seconds": 25.477,
+      "allowlisted": 103,
+      "build_time_seconds": 26.1,
       "collapse_redundant_subdomains": true,
-      "duplicates_removed": 72929,
-      "file_size_bytes": 17524534,
-      "final_domains": 943580,
-      "fingerprint": "e8c301a0f77ec4932f79e2a6ab90b6498912cb999b92459919d8cb8cb9943ca3",
+      "duplicates_removed": 77159,
+      "file_size_bytes": 16748151,
+      "final_domains": 897751,
+      "fingerprint": "2ed189df13b8380b3de58fd3052dab3302fa7dfd04386aa52a8770a05328e92f",
       "invalid_rejected": {
         "public-suffix": 122
       },
       "profile": "aggressive",
-      "redundant_domains_removed": 4618,
+      "redundant_domains_removed": 5031,
       "sources": [
         {
-          "accepted": 230998,
+          "accepted": 227517,
           "allow_rules": 0,
-          "extracted": 231053,
+          "extracted": 227572,
           "id": "hagezi-pro",
           "name": "HaGeZi Multi PRO",
           "parse_skipped": 0
         },
         {
-          "accepted": 772610,
+          "accepted": 735194,
           "allow_rules": 0,
-          "extracted": 772676,
+          "extracted": 735260,
           "id": "hagezi-tif-medium",
           "name": "HaGeZi Threat Intelligence Feeds Medium",
           "parse_skipped": 0
         },
         {
-          "accepted": 17465,
+          "accepted": 17181,
           "allow_rules": 0,
-          "extracted": 17466,
+          "extracted": 17182,
           "id": "hagezi-fake",
           "name": "HaGeZi Fake",
           "parse_skipped": 0
@@ -75,8 +75,8 @@
           "parse_skipped": 0
         }
       ],
-      "upstream_entries": 1021347,
-      "valid_domains": 948296
+      "upstream_entries": 980166,
+      "valid_domains": 902885
     },
     "balanced": {
       "allowlist_hits": {
@@ -86,36 +86,36 @@
         "githubassets.com": 1,
         "githubusercontent.com": 2,
         "grafana.com": 1,
-        "grafana.net": 20,
+        "grafana.net": 19,
         "newrelic.com": 20,
         "nr-data.net": 1,
         "youtube.com": 3
       },
-      "allowlisted": 81,
-      "build_time_seconds": 10.135,
+      "allowlisted": 80,
+      "build_time_seconds": 10.753,
       "collapse_redundant_subdomains": true,
-      "duplicates_removed": 27328,
-      "file_size_bytes": 7134590,
-      "final_domains": 369902,
-      "fingerprint": "87bf46d329d6b331e81f3785ae0e6eaf7135b5b56769e89451a9c63dd2a79174",
+      "duplicates_removed": 26926,
+      "file_size_bytes": 7059953,
+      "final_domains": 365312,
+      "fingerprint": "48ff85802098eab5843e8e02e4a26b1a274b9cfb701590f20500c714930ead95",
       "invalid_rejected": {
         "public-suffix": 71
       },
       "profile": "balanced",
-      "redundant_domains_removed": 1485,
+      "redundant_domains_removed": 1480,
       "sources": [
         {
-          "accepted": 200651,
+          "accepted": 199117,
           "allow_rules": 0,
-          "extracted": 200656,
+          "extracted": 199122,
           "id": "hagezi-normal",
           "name": "HaGeZi Multi NORMAL",
           "parse_skipped": 0
         },
         {
-          "accepted": 197993,
+          "accepted": 194529,
           "allow_rules": 0,
-          "extracted": 198059,
+          "extracted": 194595,
           "id": "hagezi-tif-mini",
           "name": "HaGeZi Threat Intelligence Feeds Mini",
           "parse_skipped": 0
@@ -129,21 +129,21 @@
           "parse_skipped": 0
         }
       ],
-      "upstream_entries": 398867,
-      "valid_domains": 371468
+      "upstream_entries": 393869,
+      "valid_domains": 366872
     },
     "nuclear": {
       "allowlist_hits": {
         "bugsnag.com": 1,
         "cloudflare-dns.com": 1,
-        "datadoghq.com": 11,
+        "datadoghq.com": 17,
         "docker.com": 2,
         "firebaseapp.com": 35,
         "firebaseio.com": 29,
         "githubassets.com": 1,
         "githubusercontent.com": 2,
         "grafana.com": 1,
-        "grafana.net": 21,
+        "grafana.net": 20,
         "honeycomb.io": 2,
         "newrelic.com": 1,
         "nr-data.net": 1,
@@ -152,47 +152,47 @@
         "stripe.com": 2,
         "youtube.com": 3
       },
-      "allowlisted": 118,
-      "build_time_seconds": 27.261,
+      "allowlisted": 123,
+      "build_time_seconds": 27.323,
       "collapse_redundant_subdomains": true,
-      "duplicates_removed": 123892,
-      "file_size_bytes": 17958097,
-      "final_domains": 964521,
-      "fingerprint": "e9486d1b393ed93cb099c34beec8e817e062eb4ce8d7115a658cbde0c56aaa8c",
+      "duplicates_removed": 125315,
+      "file_size_bytes": 17180563,
+      "final_domains": 918596,
+      "fingerprint": "38efbed8d850d33e7f60c0a82a130227a2e705cef175a8b2f6183f4225616189",
       "invalid_rejected": {
         "public-suffix": 153
       },
       "profile": "nuclear",
-      "redundant_domains_removed": 4024,
+      "redundant_domains_removed": 4476,
       "sources": [
         {
-          "accepted": 251677,
+          "accepted": 248152,
           "allow_rules": 0,
-          "extracted": 251762,
+          "extracted": 248237,
           "id": "hagezi-proplus",
           "name": "HaGeZi Multi PRO++",
           "parse_skipped": 0
         },
         {
-          "accepted": 772610,
+          "accepted": 735194,
           "allow_rules": 0,
-          "extracted": 772676,
+          "extracted": 735260,
           "id": "hagezi-tif-medium",
           "name": "HaGeZi Threat Intelligence Feeds Medium",
           "parse_skipped": 0
         },
         {
-          "accepted": 17465,
+          "accepted": 17181,
           "allow_rules": 0,
-          "extracted": 17466,
+          "extracted": 17182,
           "id": "hagezi-fake",
           "name": "HaGeZi Fake",
           "parse_skipped": 0
         },
         {
-          "accepted": 50651,
+          "accepted": 47831,
           "allow_rules": 0,
-          "extracted": 50652,
+          "extracted": 47832,
           "id": "hagezi-popupads",
           "name": "HaGeZi Pop-Up Ads",
           "parse_skipped": 0
@@ -206,11 +206,11 @@
           "parse_skipped": 0
         }
       ],
-      "upstream_entries": 1092708,
-      "valid_domains": 968663
+      "upstream_entries": 1048663,
+      "valid_domains": 923195
     }
   },
-  "redundant_domains_removed": 4618,
-  "upstream_entries": 1021347,
-  "valid_domains": 948296
+  "redundant_domains_removed": 5031,
+  "upstream_entries": 980166,
+  "valid_domains": 902885
 }
