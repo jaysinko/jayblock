@@ -1,12 +1,12 @@
 {
   "allowlisted": 95,
-  "build_time_seconds": 27.1,
-  "duplicates_removed": 101986,
+  "build_time_seconds": 28.649,
+  "duplicates_removed": 102323,
   "errors": [],
-  "file_size_bytes": 15142424,
-  "final_domains": 895923,
-  "fingerprint": "dcc6407b889db24fb22aa7bab2b3764f5aea9b3412f9b2cc3cd6951932919724",
-  "generated_at": "2026-10-16T12:23:18Z",
+  "file_size_bytes": 16305639,
+  "final_domains": 960202,
+  "fingerprint": "fdd5effac4386b1355ce0319c0e67f867600c80b007e5e1afa1976032121a726",
+  "generated_at": "2026-10-17T11:35:03Z",
   "profile": "aggressive",
   "profiles": {
     "aggressive": {
@@ -28,38 +28,38 @@
         "youtube.com": 2
       },
       "allowlisted": 95,
-      "build_time_seconds": 27.1,
+      "build_time_seconds": 28.649,
       "collapse_redundant_subdomains": true,
-      "duplicates_removed": 101986,
-      "file_size_bytes": 15142424,
-      "final_domains": 895923,
-      "fingerprint": "dcc6407b889db24fb22aa7bab2b3764f5aea9b3412f9b2cc3cd6951932919724",
+      "duplicates_removed": 102323,
+      "file_size_bytes": 16305639,
+      "final_domains": 960202,
+      "fingerprint": "fdd5effac4386b1355ce0319c0e67f867600c80b007e5e1afa1976032121a726",
       "invalid_rejected": {
         "public-suffix": 57
       },
       "profile": "aggressive",
-      "redundant_domains_removed": 4597,
+      "redundant_domains_removed": 4611,
       "sources": [
         {
-          "accepted": 200389,
+          "accepted": 201464,
           "allow_rules": 0,
-          "extracted": 200444,
+          "extracted": 201519,
           "id": "hagezi-pro",
           "name": "HaGeZi Multi PRO",
           "parse_skipped": 0
         },
         {
-          "accepted": 784663,
+          "accepted": 848183,
           "allow_rules": 0,
-          "extracted": 784664,
+          "extracted": 848184,
           "id": "hagezi-tif-medium",
           "name": "HaGeZi Threat Intelligence Feeds Medium",
           "parse_skipped": 0
         },
         {
-          "accepted": 17397,
+          "accepted": 17432,
           "allow_rules": 0,
-          "extracted": 17398,
+          "extracted": 17433,
           "id": "hagezi-fake",
           "name": "HaGeZi Fake",
           "parse_skipped": 0
@@ -73,8 +73,8 @@
           "parse_skipped": 0
         }
       ],
-      "upstream_entries": 1002658,
-      "valid_domains": 900615
+      "upstream_entries": 1067288,
+      "valid_domains": 964908
     },
     "balanced": {
       "allowlist_hits": {
@@ -90,30 +90,30 @@
         "youtube.com": 2
       },
       "allowlisted": 86,
-      "build_time_seconds": 10.786,
+      "build_time_seconds": 10.766,
       "collapse_redundant_subdomains": true,
-      "duplicates_removed": 57053,
-      "file_size_bytes": 6330049,
-      "final_domains": 332878,
-      "fingerprint": "3ba5a575cda9edc45f01ddf58bb73e688cc033b6fc2247bc7fbd6b790d95d1f7",
+      "duplicates_removed": 56716,
+      "file_size_bytes": 6383604,
+      "final_domains": 335508,
+      "fingerprint": "8d01d9c24e5367179fb524c9c9253502ed81f5abcc48294617b31368beb0e5da",
       "invalid_rejected": {
         "public-suffix": 6
       },
       "profile": "balanced",
-      "redundant_domains_removed": 1879,
+      "redundant_domains_removed": 1898,
       "sources": [
         {
-          "accepted": 164062,
+          "accepted": 164942,
           "allow_rules": 0,
-          "extracted": 164067,
+          "extracted": 164947,
           "id": "hagezi-normal",
           "name": "HaGeZi Multi NORMAL",
           "parse_skipped": 0
         },
         {
-          "accepted": 227682,
+          "accepted": 229114,
           "allow_rules": 0,
-          "extracted": 227683,
+          "extracted": 229115,
           "id": "hagezi-tif-mini",
           "name": "HaGeZi Threat Intelligence Feeds Mini",
           "parse_skipped": 0
@@ -127,8 +127,8 @@
           "parse_skipped": 0
         }
       ],
-      "upstream_entries": 391902,
-      "valid_domains": 334843
+      "upstream_entries": 394214,
+      "valid_domains": 337492
     },
     "nuclear": {
       "allowlist_hits": {
@@ -149,46 +149,46 @@
         "youtube.com": 2
       },
       "allowlisted": 98,
-      "build_time_seconds": 28.575,
+      "build_time_seconds": 29.861,
       "collapse_redundant_subdomains": true,
-      "duplicates_removed": 149341,
-      "file_size_bytes": 15434612,
-      "final_domains": 910193,
-      "fingerprint": "695d742d26c8a0c237213be4b8e67b32b3cbd53570ab0ee36aea2f58fb4c95c9",
+      "duplicates_removed": 149829,
+      "file_size_bytes": 16591156,
+      "final_domains": 974238,
+      "fingerprint": "b902baec603ec2fa564b8959ff42161ffc2b03aae43cfa5078f2d5c11cfab4d8",
       "invalid_rejected": {
         "public-suffix": 88
       },
       "profile": "nuclear",
-      "redundant_domains_removed": 4089,
+      "redundant_domains_removed": 4153,
       "sources": [
         {
-          "accepted": 214437,
+          "accepted": 215322,
           "allow_rules": 0,
-          "extracted": 214522,
+          "extracted": 215407,
           "id": "hagezi-proplus",
           "name": "HaGeZi Multi PRO++",
           "parse_skipped": 0
         },
         {
-          "accepted": 784663,
+          "accepted": 848183,
           "allow_rules": 0,
-          "extracted": 784664,
+          "extracted": 848184,
           "id": "hagezi-tif-medium",
           "name": "HaGeZi Threat Intelligence Feeds Medium",
           "parse_skipped": 0
         },
         {
-          "accepted": 17397,
+          "accepted": 17432,
           "allow_rules": 0,
-          "extracted": 17398,
+          "extracted": 17433,
           "id": "hagezi-fake",
           "name": "HaGeZi Fake",
           "parse_skipped": 0
         },
         {
-          "accepted": 47072,
+          "accepted": 47229,
           "allow_rules": 0,
-          "extracted": 47073,
+          "extracted": 47230,
           "id": "hagezi-popupads",
           "name": "HaGeZi Pop-Up Ads",
           "parse_skipped": 0
@@ -202,11 +202,11 @@
           "parse_skipped": 0
         }
       ],
-      "upstream_entries": 1063809,
-      "valid_domains": 914380
+      "upstream_entries": 1128406,
+      "valid_domains": 978489
     }
   },
-  "redundant_domains_removed": 4597,
-  "upstream_entries": 1002658,
-  "valid_domains": 900615
+  "redundant_domains_removed": 4611,
+  "upstream_entries": 1067288,
+  "valid_domains": 964908
 }
