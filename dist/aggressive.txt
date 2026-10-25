@@ -5,7 +5,7 @@
 # https://github.com/jaysinko/jayblock
 # License: GPL-3.0
 # Profile: aggressive
-# Generated: 2026-10-24T11:58:41Z
+# Generated: 2026-10-25T12:33:01Z
 # Domains: 683726
 # Fingerprint: sha256:e6f96e49e1e6e006d9b04c5c29517d960fc1d28f0b9f6f00eed63739a9747e4e
 #
