@@ -1,12 +1,12 @@
 {
   "allowlisted": 2075,
-  "build_time_seconds": 11.368,
+  "build_time_seconds": 15.613,
   "duplicates_removed": 82881,
   "errors": [],
   "file_size_bytes": 9512191,
   "final_domains": 492856,
   "fingerprint": "fdd2656e66fcb6760e5230a149242d92bca533d4b51508c28514c2ff7fcf536a",
-  "generated_at": "2026-11-03T15:04:04Z",
+  "generated_at": "2026-11-04T15:24:56Z",
   "profile": "aggressive",
   "profiles": {
     "aggressive": {
@@ -28,7 +28,7 @@
         "youtube.com": 3
       },
       "allowlisted": 2075,
-      "build_time_seconds": 11.368,
+      "build_time_seconds": 15.613,
       "collapse_redundant_subdomains": true,
       "duplicates_removed": 82881,
       "file_size_bytes": 9512191,
@@ -90,7 +90,7 @@
         "youtube.com": 3
       },
       "allowlisted": 284,
-      "build_time_seconds": 7.181,
+      "build_time_seconds": 9.667,
       "collapse_redundant_subdomains": true,
       "duplicates_removed": 55494,
       "file_size_bytes": 6073618,
@@ -149,7 +149,7 @@
         "youtube.com": 3
       },
       "allowlisted": 2080,
-      "build_time_seconds": 13.005,
+      "build_time_seconds": 17.93,
       "collapse_redundant_subdomains": true,
       "duplicates_removed": 160603,
       "file_size_bytes": 9831819,
